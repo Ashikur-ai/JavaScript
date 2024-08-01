@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .header {
+      background-color: #f44336;
+      color: white;
+      padding: 10px 0;
+      width: 100%;
+    }
+
+    .shop-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+      width: 90%;
+    }
+
+    .shop-item {
+      background-color: #e0e0e0;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .shop-item:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .shop-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .shop-item h3 {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .shop-item p {
+      margin-top: 5px;
+      color: #777;
+    }
+
+    .shop-item button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .shop-item button:hover {
+      background-color: #3e8e41;
+    }
+
+    .all-button {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 16px;
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .all-button:hover {
+      text-decoration: underline;
+    }
+
+    .rating {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .rating i {
+      color: #ffc107;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1 class="shop-title">Shop</h1>
+    </div>
+
+    <div class="shop-grid">
+      <div class="shop-item">
+        <h3>Dim</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="shop-item">
+        <h3>Super Good</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="shop-item">
+        <h3>Subway</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="shop-item">
+        <h3>Eazzy Pizzy</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="shop-item">
+        <img src="https://www.stardogs333.com/images/star-dog-logo-333.png" alt="Stardogs 333">
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Stardogs 333</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <a href="#" class="all-button">All →</a>
+  </div>
+
+</body>
+
+</html>
