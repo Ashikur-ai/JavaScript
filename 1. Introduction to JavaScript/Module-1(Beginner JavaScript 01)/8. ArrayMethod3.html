@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Method 3</title>
+</head>
+<body>
+  <script> 
+    var num = [43, 33, 55, 66, 56, 67];
+    var result = num.find(function(item){
+      return  item > 50;
+    })
+
+    var result2 = num.findIndex(function(item){
+      return item > 50;
+    })
+
+    document.write(result);
+    
+      document.write(result2);
+  </script>
+</body>
+</html>
